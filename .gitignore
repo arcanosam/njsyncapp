@@ -1,0 +1,48 @@
+## arquivos de projeto de IDE
+.project
+.settings
+.buildpath
+nbproject
+*.sublime-project
+.idea
+
+## arquivos privados de IDE
+*.sublime-workspace
+*.iws
+*.iml
+npm-*
+
+#CMD
+SenchaCmd*
+.sencha-bin
+sencha_path.conf
+
+## arquivos privados de compilacao
+.sass-cache
+node_modules/
+build/
+cordova/merges/*
+cordova/platforms/*
+cordova/plugins/*
+cordova/www/*
+cordova/native/*
+vendor/ux
+server/node_modules/
+
+# arquivos SO
+.DS_Store
+!.gitkeep
+
+#directories
+# from https://gist.github.com/Vj3k0/a934076c4cca30ec8e54
+bower_components
+node_modules
+dist
+
+#project directories
+sync_mobile/outros/*.json
+sync_desktop/db/*.sqlite
+
+#files
+*.tgz
+*.log

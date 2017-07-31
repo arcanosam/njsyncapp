@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>NjSyncApp</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+	<link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<!-- Header -->
+
+				<header id="header">
+					<a class="logo" href="index.html"><strong>NjSyncApp</strong> by MBA</a>
+					<ul class="icons">
+						<li>
+							<a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a>
+						</li>
+						<li>
+							<a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a>
+						</li>
+						<li>
+							<a class="icon fa-snapchat-ghost" href="#"><span class="label">Snapchat</span></a>
+						</li>
+						<li>
+							<a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a>
+						</li>
+						<li>
+							<a class="icon fa-medium" href="#"><span class="label">Medium</span></a>
+						</li>
+					</ul>
+				</header>
+
+                <!-- Banner -->
+
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>NjSyncApp - Preferências</h2>
+							<p>Tela de informações utilizadas pelo sistema para sincronização</p>
+						</header>
+
+                        <form method="post" action="#" id="frmPrefs" name="frmPrefs">
+                            <div class="row">
+                                <div class="10u 10u$(small)">
+                                    <label for="sync-jsons">Entidades(pasta com JSONs):</label>
+                                    <input type="text" name="sync-jsons" id="sync-jsons" value="" placeholder="Entidades(pasta com JSONs)" />
+                                </div>
+                                <div class="2u$ 12u$(small)">
+                                    <label for="adb-path">&nbsp;</label>
+                                    <a href="#" class="button icon fa-folder-open" id="openJson"></a>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <div class="10u 10u$(small)">
+                                    <label for="adb-bin">Path para ADB:</label>
+                                    <input type="text" name="adb-bin" id="adb-bin" value="" placeholder="Path do ADB" />
+                                </div>
+                                <div class="2u$ 12u$(small)">
+                                    <label for="adb-bin">&nbsp;</label>
+                                    <a href="#" class="button icon fa-folder-open" id="openAdb"></a>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <div class="3u 12u$(small)">
+                                    <label for="sync-mob">Path sync Móvel:</label>
+                                    <input type="text" name="sync-mob" id="sync-mob" value="" placeholder="Path sync Móvel" />
+                                </div>
+                                <div class="3u 12u$(small)">
+                                    <label for="pg-host">Host PostGRES:</label>
+                                    <input type="text" name="pg-host" id="pg-host" value="" placeholder="Servidor PostGRES" />
+                                </div>
+                                <div class="3u 12u$(small)">
+                                    <label for="pg-user">Usuário PostGRES:</label>
+                                    <input type="text" name="pg-user" id="pg-user" value="" placeholder="Usuário PostGRES" />
+                                </div>
+                                <div class="3u$ 12u$(small)">
+                                    <label for="pg-port">Porta PostGRES:</label>
+                                    <input type="text" name="pg-port" id="pg-port" value="" placeholder="Porta PostGRES" />
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="12u$">
+                                <ul class="actions">
+                                    <li><input type="button" value="Salvar" class="special icon fa-save" id="prefSave" /></li>
+                                    <li><input type="button" value="Restaurar padrão" id="prefRest"/></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+
+				</section>
+			</div>
+		</div>
+
+        <!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+                        <li>
+							<a href="sync_desktop.html" class="button special mob-desk">
+								Móvel para Desktop
+                            </a>
+						</li>
+                        <li>
+                            <a href="sync_mobile.html" class="button special desk-mob">
+                                Desktop para Móvel
+                            </a>
+                        </li>
+                        <li>
+							<a href="preferences.html" class="button special icon fa-cog">
+                                Preferências
+                            </a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script>
+	   window.$ = window.jQuery = require('./assets/js/jquery.min.js');
+	</script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+    <script src="../preferences/index.js" ></script>
+</body>
+</html>

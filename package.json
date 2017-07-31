@@ -1,0 +1,19 @@
+{
+    "name": "njsyncapp",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Electron app, syncronizer module between mobile and desktop",
+    "main": "main.js",
+    "license": "MIT",
+    "devDependencies":{
+        "electron": "1.6.11",
+        "validate-js": "",
+        "JSONStream": "",
+        "pg":"",
+        "sql.js":""
+
+    },
+    "scripts": {
+        "start": "electron ."
+    }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Editorial by HTML5 UP</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+	<link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<!-- Header -->
+
+				<header id="header">
+					<a class="logo" href="index.html"><strong>NjSyncApp</strong> by MBA</a>
+					<ul class="icons">
+						<li>
+							<a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a>
+						</li>
+						<li>
+							<a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a>
+						</li>
+						<li>
+							<a class="icon fa-snapchat-ghost" href="#"><span class="label">Snapchat</span></a>
+						</li>
+						<li>
+							<a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a>
+						</li>
+						<li>
+							<a class="icon fa-medium" href="#"><span class="label">Medium</span></a>
+						</li>
+					</ul>
+				</header>
+
+                <section id="banner">
+					<div class="content">
+						<header>
+							<h2>Sincronização Mobile <span class="icon fa-arrow-circle-right"></span> Desktop</h2>
+						</header>
+                        <div class="row">
+                            <div class="10u 10u$(small)">
+                                &nbsp;
+                            </div>
+                            <div class="2u$ 12u$(small)">
+                                <a href="#" class="button special icon fa-play" id="startSync" />
+                                    Iniciar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="divLogDskMob">
+                                Log de rotina de sincronização:
+                            </label>
+                            <div class="12u$" name="divLogDskMob" id="divLogDskMob" style="overflow-y: scroll;height:200px;">
+                            </div>
+                        </div>
+                        <div class="row" id="instCnx" style="display:none;">
+                            <div class="1u 1u$(small)">
+                                &nbsp;
+                            </div>
+                            <div class="10u 10u$(small)">
+                                <p>
+                                    Para conexão do seu dispositivo, utilize-se das orientações desta página
+                                    <br>
+                                    <a href="https://www.kingoapp.com/root-tutorials/how-to-enable-usb-debugging-mode-on-android.htm"
+                                        target="_blank">
+                                        How to Enable USB Debugging Mode on Android
+                                    </a>
+                                    que listamos abaixo resumidamente:
+                                </p>
+                            </div>
+                            <div class="1u$ 1u$(small)">
+                                &nbsp;
+                            </div>
+                        </div>
+                        <div class="row" id="andVrs" style="display:none;">
+                            <div class="4u 4u$(small)">
+                                <ol>
+                                    <li>Para Android <b>2.0</b>-<b>2.3.x</b></li>
+                                    <ol>
+                                        <li>Configurações</li>
+                                        <li>Aplicações</li>
+                                        <li>Desenvolvimento</li>
+                                        <li>Marque <b>Depuração USB</b></li>
+                                        <li>Clique <b>OK</b></li>
+                                    </ol>
+                                </ol>
+                            </div>
+                            <div class="4u 4u$(small)">
+                                <ol>
+                                    <li>Para Android <b>3.0</b>-<b>4.1.x</b></li>
+                                    <ol>
+                                        <li>Configurações</li>
+                                        <li>Opções de Desenvolvedor</li>
+                                        <li>Marque <b>Depuração USB</b></li>
+                                        <li>Clique <b>OK</b></li>
+                                    </ol>
+                                </ol>
+                            </div>
+                            <div class="4u$ 4u$(small)">
+                                <ol>
+                                    <li>Para Android <b>4.2</b> e acima</li>
+                                    <ol>
+                                        <li>Configurações</li>
+                                        <li>Sobre o telefone ou Sobre o tablet</li>
+                                        <li>
+                                            Clique na opção <b>Número da versão</b>
+                                            <br>
+                                            Até aparecer a mensagem:<b>Você é um desenvolvedor</b>
+                                        </li>
+                                        <li>Volte a tela anterior</li>
+                                        <li>Clique em <b>Opções de Desenvolvedor</b></li>
+                                        <li>Marque <b>Depuração USB</b></li>
+                                        <li>Clique <b>OK</b></li>
+                                    </ol>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="row" id="dbgCnx" style="display:none;">
+                            <div class="4u 4u$(small)">
+                                Em seguida, <b>conecte</b> o cabo USB no
+                                computador
+                            </div>
+                            <div class="4u 4u$(small)">
+                                <img src="assets/img/allow_debug_con.jpg" />
+                            </div>
+                            <div class="4u$ 4u$(small)">
+                                <a href="#" class="button small special icon fa-step-forward" id="contSync" />
+                                    Continuar sincronização
+                                </a>
+                                <br>
+                                <br>
+                                <a href="#" class="button small special icon fa-step-forward" id="shutSync" />
+                                    Cancelar sincronização
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" id="divPassPG" style="display:none;">
+                            <div class="1u 1u$(small)">
+                                &nbsp;
+                            </div>
+                            <div class="10u 10u$(small)">
+                                <p>
+                                    <label for="passPG">
+                                        Senha para conexão com o banco:
+                                    </label>
+                                    <input type="password" name="passPG" id="passPG" value="" placeholder="Senha PostGRES" />
+                                    <br>
+                                    <a href="#" class="button small special icon fa-step-forward" id="conxPG" />
+                                        Conectar com o banco
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="1u$ 1u$(small)">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+				</section>
+			</div>
+		</div>
+
+        <!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+                        <li>
+							<a href="sync_desktop.html" class="button special mob-desk">
+								Móvel para Desktop
+                            </a>
+						</li>
+                        <li>
+                            <a href="sync_mobile.html" class="button special desk-mob">
+                                Desktop para Móvel
+                            </a>
+                        </li>
+                        <li>
+							<a href="preferences.html" class="button special icon fa-cog">
+                                Preferências
+                            </a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script>
+	   window.$ = window.jQuery = require('./assets/js/jquery.min.js');
+	</script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+    <script src="../sync_desktop/index.js"></script>
+</body>
+</html>
