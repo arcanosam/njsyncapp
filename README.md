@@ -5,7 +5,7 @@ Electron app, syncronizer module between mobile and desktop
 
 ## Development Dependencies
 
-- [Electron 1.6.11](https://electron.atom.io/)
+- [Electron 1.6.16](https://electron.atom.io/)
 - [validate.js](http://rickharrison.github.io/validate.js/)
 - [Node-Postgres](https://node-postgres.com/)
 - [Sqlite3](https://www.npmjs.com/package/sqlite3)
