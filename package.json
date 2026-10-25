@@ -6,7 +6,7 @@
     "main": "main.js",
     "license": "MIT",
     "devDependencies":{
-        "electron": "39.8.10",
+        "electron": "42.11.16",
         "validate-js": "",
         "JSONStream": "",
         "pg":"",
